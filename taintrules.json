@@ -1,0 +1,411 @@
+{
+	"<java.lang.StringBuilder: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.String: java.lang.String trim()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>":
+		{
+			"taint":["base","args"]
+		},
+		
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>":
+		{
+			"taint":["base","args"]
+		},
+		
+	"<java.lang.StringBuilder: void <init>(java.lang.String)>":
+		{
+			"taint":["arg0"]
+		},
+		
+		
+	"<android.content.Context: java.lang.String getString(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.content.res.Resources: java.lang.String getString(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>":
+		{
+			"taint":["args"]
+		},
+		
+	"<android.content.res.Resources: int getIdentifier(java.lang.String,java.lang.String,java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+		
+	"<java.util.UUID: java.util.UUID fromString(java.lang.String)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.util.UUID: long getLeastSignificantBits()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.UUID: long getMostSignificantBits()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<android.os.ParcelUuid: android.os.ParcelUuid fromString(java.lang.String)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.os.ParcelUuid: void <init>(java.util.UUID)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.bluetooth.BluetoothGatt: android.bluetooth.BluetoothGattService getService(java.util.UUID)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.bluetooth.BluetoothGattService: android.bluetooth.BluetoothGattCharacteristic getCharacteristic(java.util.UUID)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.lang.String: java.lang.String replaceFirst(java.lang.String,java.lang.String)>":
+		{
+			"taint":["base","args"]
+		},
+		
+	"<java.lang.Integer: int intValue()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.Integer: java.lang.Integer valueOf(int)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.util.Arrays: byte[] copyOf(byte[],int)>":
+		{
+			"taint":["args"]
+		},
+		
+	"<java.lang.String: byte[] getBytes()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.Arrays: byte[] copyOfRange(byte[],int,int)>":
+		{
+			"taint":["args"]
+		},
+		
+	"<java.lang.String: int length()>":
+		{
+			"taint":["base"]
+		},
+		
+		
+	"<java.lang.Math: int round(float)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<java.lang.Math: double random()>":
+		{
+			"taint":[], "isSystemAPISrc":["SYSTEM_API"]
+		},
+		
+	"<java.lang.String: java.lang.String substring(int)>":
+		{
+			"taint":["base", "args"]
+		},
+		
+		
+	"<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>":
+		{
+			"taint":["base", "arg1"]
+		},
+		
+	"<java.util.UUID: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.UUID: void <init>(long,long)>":
+		{
+			"taint":["base", "args"]
+		},
+		
+	"<java.util.UUID: java.util.UUID randomUUID()>":
+		{
+			"taint":[], "isSystemAPISrc":["SYSTEM_API"]
+		},
+		
+	"<java.lang.String: byte[] getBytes(java.nio.charset.Charset)>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.util.Map: java.lang.Object get(java.lang.Object)>":
+		{
+			"taint":["base"]
+		},
+		
+	"<java.lang.Boolean: java.lang.Boolean valueOf(boolean)>":
+		{
+			"taint":["arg0"]
+		},
+		
+	"<android.os.Parcel: java.lang.String readString()>":
+		{
+			"taint":["base"]
+		},
+		
+
+	"<java.lang.String: char charAt(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: int indexOf(int)>":
+		{
+			"taint":["base"]
+		},
+
+
+
+	"<java.util.ArrayList: java.lang.Object get(int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(int)>":
+		{
+			"taint":["base", "args"]
+		},
+
+
+	"<java.lang.Math: int min(int,int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Integer: int parseInt(java.lang.String,int)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.util.List: int size()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.String: char[] toCharArray()>":
+		{
+			"taint":["base"]
+		},
+
+
+	"<java.lang.Integer: int parseInt(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Byte: byte byteValue()>":
+		{
+			"taint":["base"]
+		},
+
+
+	"<java.lang.String: byte[] getBytes(java.lang.String)>":
+		{
+			"taint":["base"]
+		},
+
+
+	"<java.lang.Math: float max(float,float)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.String: java.lang.String format(java.util.Locale,java.lang.String,java.lang.Object[])>":
+		{
+			"taint":["arg1", "arg2"]
+		},
+
+	"<java.lang.String: java.lang.String substring(int,int)>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Number: int intValue()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Object: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(char)>":
+		{
+			"taint":["base", "args"]
+		},
+
+
+	"<java.lang.String: java.lang.String valueOf(double)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Math: float abs(float)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Long: java.lang.Long valueOf(long)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Long: long parseLong(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Integer: java.lang.String toString(int)>":
+		{
+			"taint":["args"]
+		},
+
+
+	"<java.lang.Class: java.lang.Object cast(java.lang.Object)>":
+		{
+			"taint":["args"]
+		},
+
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(long)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.Float: float parseFloat(java.lang.String)> ":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.CharSequence: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+
+	"<java.util.Random: int nextInt(int)>":
+		{
+			"taint":[], "isSystemAPISrc":["SYSTEM_API"]
+		},
+
+	"<java.math.BigDecimal: int intValue()>":
+		{
+			"taint":["base"]
+		},
+
+
+	"<java.lang.Math: int abs(int)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Math: int max(int,int)>":
+		{
+			"taint":["args"]
+		},
+
+
+	"<java.lang.String: java.lang.String valueOf(int)>":
+		{
+			"taint":["args"]
+		},
+
+
+
+	"<java.lang.Float: float floatValue()>":
+		{
+			"taint":["base"]
+		},
+
+
+
+
+	"<java.util.Date: long getTime()>":
+		{
+			"taint":["base"]
+		},
+
+	"<java.lang.Double: double parseDouble(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>":
+		{
+			"taint":["args"]
+		},
+
+	"<java.lang.StringBuilder: java.lang.StringBuilder append(float)>":
+		{
+			"taint":["base", "args"]
+		},
+
+	"<java.lang.Float: java.lang.Float valueOf(float)>":
+		{
+			"taint":["args"]
+		},
+
+
+	"<java.lang.Double: java.lang.Double valueOf(double)>":
+		{
+			"taint":["args"]
+		},
+
+
+	"<java.lang.Long: long parseLong(java.lang.String,int)>":
+		{
+			"taint":["arg0"]
+		},
+
+	"<java.lang.String: java.lang.String toUpperCase()>":
+		{
+			"taint":["base"]
+		},
+
+
+	"<java.lang.StringBuffer: java.lang.String toString()>":
+		{
+			"taint":["base"]
+		},
+
+
+
+
+	"<java.lang.Boolean: boolean booleanValue()>":
+		{
+			"taint":["base"]
+		},
+}
+
+
+
